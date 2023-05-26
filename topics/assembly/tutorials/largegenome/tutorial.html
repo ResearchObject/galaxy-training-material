@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@2f91c9e7931f48d6a90f3ccb33bdd54468eb8d5a",
+  release: "galaxy-training-network@5cb72b305bd04682c11ef75cb14841e50013e3b5",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -46,7 +46,7 @@ Sentry.init({
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Large genome assembly and polishing">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 09:34:29 +0000">
+<meta name="DC.date" content="2023-05-23 01:04:56 +0000">
 <meta name="DC.creator" content="Anna Syme">
 
         
@@ -87,7 +87,7 @@ Sentry.init({
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2023-05-18 09:34:29 +0000",
+  "dateModified": "2023-05-23 01:04:56 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Large genome assembly and polishing",
   "interactivityType": "mixed",
@@ -678,8 +678,9 @@ Sentry.init({
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 18, 2023 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 23, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+		
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>.
              The GTN Framework is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
@@ -920,7 +921,7 @@ https://zenodo.org/record/7055935/files/Ref_genome_Arabidopsis.fasta
       <p><!--END_SNIPPET--></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing data from a data library<span class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ol>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to the correct folder as indicated by your instructor</li>   <li>Select the desired files</li>   <li>Click on <strong>Add to History</strong> <i class="fas fa-caret-down" aria-hidden="true"></i><span class="visually-hidden">galaxy-dropdown</span> near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>     <p>In the pop-up window, choose</p>     <ul>       <li><em>“Select history”</em>: the history you want to import the data to (or create a new one)</li>     </ul>   </li>   <li>Click on <strong>Import</strong></li> </ol> </blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-data-from-a-data-library"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-data-from-a-data-library" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing data from a data library<span class="fold-unfold fa fa-minus-square"></span></button></div>   <p>As an alternative to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>   <ol>   <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>   <li>Navigate to  the correct folder as indicated by your instructor.     <ul>       <li>On most Galaxies tutorial data will be provided in a folder named <strong>GTN - Material –&gt; Topic Name -&gt; Tutorial Name</strong>.</li>     </ul>   </li>   <li>Select the desired files</li>   <li>Click on <strong>Add to History</strong> <i class="fas fa-caret-down" aria-hidden="true"></i><span class="visually-hidden">galaxy-dropdown</span> near the top and select <strong>as Datasets</strong> from the dropdown menu</li>   <li>     <p>In the pop-up window, choose</p>     <ul>       <li><em>“Select history”</em>: the history you want to import the data to (or create a new one)</li>     </ul>   </li>   <li>Click on <strong>Import</strong></li> </ol> </blockquote>
       <p><!--END_SNIPPET--></p>
     </li>
     <li>
@@ -980,21 +981,19 @@ https://zenodo.org/record/7055935/files/Ref_genome_Arabidopsis.fasta
   <div class="box-title hands-on-title" id="hands-on-run-the-data-qc-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Run the Data QC workflow</div>
 
   <ol>
-    <li><strong>Import the Data QC workflow</strong> into Galaxy:
-      <ul>
-        <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga">this workflow</a> or download it to your computer.</li>
-        <li>Import the workflow into Galaxy</li>
-      </ul>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-data_qc"><strong>Galaxy Workflow Data QC</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Data_QC.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Data QC</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>
+      <p>Run <strong>Data QC</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:</p>
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Input file: long reads”</em>: the nanopore fastq.gz file</li>
@@ -1101,16 +1100,19 @@ https://zenodo.org/record/7055935/files/Ref_genome_Arabidopsis.fasta
         <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga">this workflow</a> or download it to your computer.</li>
         <li>Import the workflow into Galaxy</li>
       </ul>
+    </li>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-kmer_counting"><strong>Kmer counting workflow</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-kmer_counting.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Data QC</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>Run <strong>Kmer counting</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Input file: Illumina reads R1”</em>: the illumina R1 fastq.gz file</li>
@@ -1218,21 +1220,19 @@ https://zenodo.org/record/7055935/files/Ref_genome_Arabidopsis.fasta
   <div class="box-title hands-on-title" id="hands-on-run-the-trim-and-filter-reads-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Run the Trim and Filter Reads workflow</div>
 
   <ol>
-    <li><strong>Import the Trim and Filter reads workflow</strong> into Galaxy:
-      <ul>
-        <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Trim_and_filter_reads.ga">this workflow</a> or download it to your computer.</li>
-        <li>Import the workflow into Galaxy</li>
-      </ul>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-2"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-2" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-trim_and_filter_reads"><strong>Trim and Filter reads</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Trim_and_filter_reads.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-2"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-2" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Trim and Filter Reads</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>
+      <p>Run <strong>Trim and Filter Reads</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:</p>
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Input file: long reads”</em>: the nanopore fastq.gz file</li>
@@ -1344,21 +1344,19 @@ These coverages are very high but are ok to use with tutorial data. With a typic
   <div class="box-title hands-on-title" id="hands-on-run-the-assembly-with-flye-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Run the Assembly with Flye workflow</div>
 
   <ol>
-    <li><strong>Import the Assembly with Flye workflow</strong> into Galaxy:
-      <ul>
-        <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assembly_with_Flye.ga">this workflow</a> or download it to your computer.</li>
-        <li>Import the workflow into Galaxy</li>
-      </ul>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-3"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-3" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow-3"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assembly_with_flye"><strong>Assembly with Flye</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assembly_with_Flye.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-3"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-3" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Assembly with Flye</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>
+      <p>Run <strong>Assembly with Flye</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:</p>
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Input file: long reads”</em>: the fastp filtered long reads fastq.gz file</li>
@@ -1485,21 +1483,19 @@ Open the Quast tabular report to see the assembly statistics:</p>
   <div class="box-title hands-on-title" id="hands-on-run-the-assembly-polishing-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Run the Assembly polishing workflow</div>
 
   <ol>
-    <li><strong>Import the Assembly polishing workflow</strong> into Galaxy:
-      <ul>
-        <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assembly_polishing.ga">this workflow</a> or download it to your computer.</li>
-        <li>Import the workflow into Galaxy</li>
-      </ul>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-4"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-4" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow-4"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assembly_polishing"><strong>Assembly polishing workflow</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assembly_polishing.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-4"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-4" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Assembly polishing</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>
+      <p>Run <strong>Assembly polishing</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:</p>
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Assembly to be polished”</em>: the assembly fasta file</li>
@@ -1616,21 +1612,19 @@ Open the Quast tabular report to see the assembly statistics:</p>
   <div class="box-title hands-on-title" id="hands-on-run-the-assess-genome-quality-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Run the Assess Genome Quality workflow</div>
 
   <ol>
-    <li><strong>Import the Assess Genome Quality workflow</strong> into Galaxy:
-      <ul>
-        <li>Copy the URL (e.g. via right-click) of <a href="/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga">this workflow</a> or download it to your computer.</li>
-        <li>Import the workflow into Galaxy</li>
-      </ul>
+    <li>
+      <p><strong>Import the workflow</strong> into Galaxy:</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-5"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-5" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote>
+      <blockquote class="notranslate hands_on">   <div class="box-title hands_on-title" id="hands-on-importing-and-launching-a-workflow-5"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Importing and Launching a workflow</div>   <div class="show-when-galaxy-proxy-active"> Click here to run the  <span class="workflow" data-workflow="https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/assembly-largegenome/versions/galaxy-workflow-assess_genome_quality"><strong>Assess Genome Quality</strong> <i class="fas fa-share-alt" aria-hidden="true"></i></span> workflow. </div>   <p class="hide-when-galaxy-proxy-active">Or copy the URL (e.g. via right-click) of <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/largegenome/workflows/Galaxy-Workflow-Assess_genome_quality.ga">this workflow</a>, and import the workflow into Galaxy</p>   <div class="hide-when-galaxy-proxy-active"> <!--SNIPPET--><blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-a-workflow-5"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-a-workflow-5" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing a workflow<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Click on <em>Workflow</em> on the top menu bar of Galaxy. You will see a list of all your workflows.</li>   <li>Click on <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Import</strong> at the top-right of the screen</li>   <li>Provide your workflow     <ul>       <li>Option 1: Paste the URL of the workflow into the box labelled <em>“Archived Workflow URL”</em></li>       <li>Option 2: Upload the workflow file in the box labelled <em>“Archived Workflow File”</em></li>     </ul>   </li>   <li>Click the <strong>Import workflow</strong> button</li> </ul> </blockquote> <!--END_SNIPPET--> </div> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <ul>
         <li>Click “Expand to full workflow form”</li>
       </ul>
     </li>
-    <li>Run <strong>Assess Genome Quality</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:
+    <li>
+      <p>Run <strong>Assess Genome Quality</strong> <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> using the following parameters:</p>
       <ul>
         <li><em>“Send results to a new history”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“1: Input file: Polished assembly”</em>: the polished assembly fasta file from the previous polishing workflow</li>
@@ -1952,7 +1946,7 @@ tools:
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/2f91c9e7931f48d6a90f3ccb33bdd54468eb8d5a">2f91c9e</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/5cb72b305bd04682c11ef75cb14841e50013e3b5">5cb72b3</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
@@ -1962,9 +1956,9 @@ tools:
 				</p>
 				
 				<p>
+					<i>This Material</i>:
 					
-						This material licensed under
-					
+					It is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
