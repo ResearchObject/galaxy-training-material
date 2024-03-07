@@ -99,10 +99,6 @@
     ],
     "inexact": [
       {
-        "url": "http://143.169.238.104/galaxy/",
-        "name": "Biomina"
-      },
-      {
         "url": "https://galaxytrakr.org/",
         "name": "GalaxyTrakr",
         "usegalaxy": "false"
@@ -111,11 +107,6 @@
         "url": "https://mississippi.sorbonne-universite.fr",
         "name": "MISSISSIPPI",
         "usegalaxy": "false"
-      },
-      {
-        "url": "https://usegalaxy.be/",
-        "name": "UseGalaxy.be",
-        "usegalaxy": "true"
       },
       {
         "url": "https://usegalaxy.fr/",
