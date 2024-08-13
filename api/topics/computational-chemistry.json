@@ -194,6 +194,11 @@
         ],
         "inexact": [
           {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.cz/",
             "name": "UseGalaxy.cz",
             "usegalaxy": "true"
@@ -610,6 +615,11 @@
           }
         ],
         "inexact": [
+          {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
           {
             "url": "https://usegalaxy.cz/",
             "name": "UseGalaxy.cz",
