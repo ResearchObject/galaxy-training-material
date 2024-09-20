@@ -70,11 +70,6 @@
         "url": "https://usegalaxy.no/",
         "name": "UseGalaxy.no",
         "usegalaxy": "true"
-      },
-      {
-        "url": "https://usegalaxy.org",
-        "name": "UseGalaxy.org (Main)",
-        "usegalaxy": "true"
       }
     ],
     "inexact": [
@@ -97,6 +92,10 @@
         "url": "https://mississippi.sorbonne-universite.fr",
         "name": "MISSISSIPPI",
         "usegalaxy": "false"
+      },
+      {
+        "url": "https://galaxy.bio.di.uminho.pt/",
+        "name": "PhagePromotor"
       }
     ]
   },
